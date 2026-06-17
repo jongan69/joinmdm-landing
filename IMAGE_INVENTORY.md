@@ -18,8 +18,8 @@ Current page still uses local image files with these exact names. Replace each f
 - `funnel_mobile_assets/images/inline-image-02.jpg` — 1 file
   - Primary proof / dashboard image in lead proof card
 
-- `funnel_mobile_assets/images/inline-image-03.jpg` through `funnel_mobile_assets/images/inline-image-17.jpg` — 15 files
-  - Student proof gallery, social proof, results screenshots
+- `funnel_mobile_assets/images/user-testimonial-1.png` through `funnel_mobile_assets/images/user-testimonial-5.png` — 5 files
+  - Student proof gallery and testimonials from your latest uploads
 
 ## Optional branding upgrades
 
@@ -29,6 +29,7 @@ Current page still uses local image files with these exact names. Replace each f
 
 ## Quick counts
 
-- Total local image files currently tracked: 19
-  - Required brand files: 2
-  - Proof/portfolio files: 17
+- Total local image files currently tracked: 9
+  - Required brand/proof files: 2
+  - Founder proof files: 2
+  - Student proof files: 5
