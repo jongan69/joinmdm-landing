@@ -8,9 +8,6 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="assets/images/favicon.png" rel="icon" type="image/png"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
-<script async="" src="https://fast.wistia.com/player.js"></script>
-<script async="" src="https://fast.wistia.com/embed/8ysornk98e.js" type="module"></script>
-<style>wistia-player[media-id='8ysornk98e']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/8ysornk98e/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; background: #0f172a; }
@@ -162,7 +159,13 @@ h1 .accent { color: var(--a); }
   display: flex; flex-direction: column; align-items: center; gap: 24px;
   opacity: 0; animation: up .8s .35s ease forwards;
 }
-.video-wrap wistia-player { width: 100%; display: block; }
+.video-wrap iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: 0;
+  border-radius: var(--r);
+}
 .hero-btn {
   display: inline-flex; align-items: center; gap: 8px;
   font-size: 15px; font-weight: 400; color: #fff;
@@ -553,7 +556,7 @@ wistia-player { width: 100%; display: block; }
 <p class="hero-sub">MDM focuses your attention on the highest-leverage actions: positioning, systems, and launch rhythm. Get in with a focused plan and a faster path to validated profit.</p>
 </section>
 <div class="video-wrap">
-<wistia-player aspect="1.7777777777777777" media-id="8ysornk98e"></wistia-player>
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/gbKtQI2jHqk?rel=0" title="MDM introduction"></iframe>
 <a class="hero-btn" data-scroll-to-apply="" href="#apply">Apply now</a>
 </div>
 <div class="esteban-wrap reveal">
@@ -587,7 +590,7 @@ wistia-player { width: 100%; display: block; }
 <div class="testimonial-video-wrap">
 <div class="testimonial-video-grid">
 <div class="testimonial-video-item">
-<div class="testimonial-video-card"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/gbKtQI2jHqk?rel=0" title="Josep testimonial"></iframe></div>
+<div class="testimonial-video-card"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/x0PhPEc8O0w?rel=0" title="Josep testimonial"></iframe></div>
 <p class="testimonial-video-caption"><strong>Josep</strong> came from a difficult place and now has generated over $500K in 6 months through MDM's process — one of our strongest outcomes to date.</p>
 </div>
 <div class="testimonial-video-item">
