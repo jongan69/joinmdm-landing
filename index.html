@@ -435,9 +435,14 @@ footer {
   margin-top: 100px;
   background: #0b1220;
   padding-bottom: env(safe-area-inset-bottom);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 .footer-row {
-  width: 100%; max-width: none; margin: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   padding: 32px 24px;
   display: flex; align-items: center; justify-content: space-between;
   gap: 20px;
@@ -494,6 +499,9 @@ footer {
   .esteban-body { grid-template-columns: 1fr; gap: 24px; }
   .guarantee-card { padding: 32px; }
 .footer-row { 
+    width: 100%;
+    max-width: none;
+    margin: 0;
     flex-direction: column; gap: 16px; text-align: center; 
     padding: 32px 24px 40px;
   }
