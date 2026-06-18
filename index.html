@@ -1023,19 +1023,41 @@
       width: 100%;
       max-width: 1100px;
       margin: 0 auto;
-      padding: 32px clamp(16px, 5vw, 36px);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+      padding: 38px clamp(16px, 5vw, 40px) 34px;
+      display: grid;
+      grid-template-columns: minmax(280px, 2fr) minmax(220px, 1fr) minmax(220px, 1fr);
+      align-items: start;
+      gap: 20px 24px;
       box-sizing: border-box;
     }
 
     .footer-brand {
       display: flex;
-      align-items: center;
-      gap: 12px;
+      align-items: flex-start;
+      gap: 14px;
       line-height: 1;
+    }
+
+    .footer-brand-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+    }
+
+    .footer-links-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: rgba(198, 205, 224, 0.9);
+      margin: 0;
+      font-weight: 500;
     }
 
     .footer-logo-img {
@@ -1060,6 +1082,7 @@
       color: rgba(215, 223, 245, 0.75);
       font-weight: 300;
       line-height: 1;
+      margin: 0;
     }
 
     .footer-brand-note {
@@ -1091,8 +1114,9 @@
     .footer-social-wrap {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 12px;
-      margin-top: 10px;
+      justify-content: flex-end;
+      gap: 8px 10px;
+      margin: 0;
     }
 
     .footer-social-wrap a {
@@ -1232,9 +1256,9 @@
 
       .footer-row {
         width: 100%;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         text-align: center;
-        gap: 16px;
+        gap: 22px;
         padding-bottom: 40px;
         padding-left: clamp(16px, 5vw, 36px);
         padding-right: clamp(16px, 5vw, 36px);
@@ -1243,14 +1267,28 @@
       .footer-brand {
         justify-content: center;
         flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-brand-copy {
+        align-items: center;
+      }
+
+      .footer-links-wrap {
+        align-items: center;
       }
 
       .footer-brand-note {
         max-width: 100%;
       }
 
+      .footer-social-wrap,
       .footer-legal {
         justify-content: center;
+      }
+
+      .footer-legal {
+        gap: 16px;
       }
 
       .video-wrap,
@@ -1819,18 +1857,24 @@
       <div class="footer-row">
         <div class="footer-brand">
           <img alt="MDM" class="footer-logo-img" src="assets/images/Logo.jpg" />
-          <span class="footer-logo">MDM</span>
-          <p class="footer-brand-note">MDM is a group of Ecom professionals that specialize in AI organic dropshipping,
-            scaling systems, and AI ecommerce execution for growing stores.</p>
-          <span class="footer-copy">© 2026</span>
+          <div class="footer-brand-copy">
+            <span class="footer-logo">MDM</span>
+            <p class="footer-brand-note">MDM is a group of Ecom professionals that specialize in AI organic dropshipping,
+              scaling systems, and AI ecommerce execution for growing stores.</p>
+            <span class="footer-copy">© 2026</span>
+          </div>
         </div>
-        <div class="footer-social-wrap">
-          <a href="https://www.instagram.com/join.mdm/" rel="noreferrer" target="_blank">Instagram — join.mdm</a>
-          <a href="https://www.youtube.com/@MillionDollarMovez" rel="noreferrer" target="_blank">Case Study YouTube</a>
-        </div>
-        <div class="footer-legal">
-          <a href="privacy-policy/">Privacy Policy</a>
-          <a href="terms-of-service/">Terms of Service</a>
+        <div class="footer-links-wrap">
+          <p class="footer-links-title">Follow MDM</p>
+          <div class="footer-social-wrap">
+            <a href="https://www.instagram.com/join.mdm/" rel="noreferrer" target="_blank">Instagram — join.mdm</a>
+            <a href="https://www.youtube.com/@MillionDollarMovez" rel="noreferrer" target="_blank">Case Study YouTube</a>
+          </div>
+          <p class="footer-links-title">Legal</p>
+          <div class="footer-legal">
+            <a href="privacy-policy/">Privacy Policy</a>
+            <a href="terms-of-service/">Terms of Service</a>
+          </div>
         </div>
       </div>
     </footer>
